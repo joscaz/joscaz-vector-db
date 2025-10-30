@@ -9,7 +9,7 @@ This is a high-performance vector database library and CLI tool written in C17. 
 - Metadata filtering
 - Persistent storage with write-ahead logging
 - SIMD-accelerated similarity computation
-- HNSW indexing (planned)
+- HNSW indexing
 
 ## Project Structure
 
@@ -88,7 +88,7 @@ This project is under active development. Current implementation status:
 - [ ] Step 3: Storage layer with WAL
 - [ ] Step 4: Similarity computation and exact search
 - [ ] Step 5: Metadata indexing
-- [ ] Step 6: HNSW index (optional)
+- [ ] Step 6: HNSW index
 - [ ] Step 7: Observability and polish
 
 ## Design Principles

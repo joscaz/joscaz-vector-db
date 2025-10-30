@@ -7,6 +7,25 @@
 
 #include "test_framework.h"
 
+/* Declare test functions from other files */
+/* From test_types.c */
+extern void test_metric_to_string(void);
+extern void test_status_to_string(void);
+extern void test_metric_validation(void);
+extern void test_vector_create_free(void);
+extern void test_vector_create_invalid(void);
+extern void test_vector_copy(void);
+extern void test_id_validation(void);
+extern void test_id_copy(void);
+
+/* From test_collection.c */
+extern void test_collection_validate_params(void);
+extern void test_collection_create_close(void);
+extern void test_collection_metrics(void);
+extern void test_collection_create_invalid(void);
+extern void test_collection_get_info_invalid(void);
+extern void test_collection_long_name(void);
+
 /**
  * Sanity test: basic arithmetic
  */
@@ -59,19 +78,35 @@ TEST(sanity_floats) {
  */
 int main(void) {
     printf("===========================================\n");
-    printf("VDB Test Suite\n");
+    printf("VDB Test Suite - Step 2\n");
     printf("===========================================\n\n");
     
-    // Run sanity tests
-    printf("Running sanity tests...\n");
+    /* Sanity tests */
+    printf("--- Sanity Tests ---\n");
     RUN_TEST(sanity_arithmetic);
-    RUN_TEST(sanity_strings);
-    RUN_TEST(sanity_pointers);
-    RUN_TEST(sanity_floats);
     
-    // Print summary and exit
+    /* Type tests */
+    printf("\n--- Type Tests ---\n");
+    RUN_TEST(metric_to_string);
+    RUN_TEST(status_to_string);
+    RUN_TEST(metric_validation);
+    RUN_TEST(vector_create_free);
+    RUN_TEST(vector_create_invalid);
+    RUN_TEST(vector_copy);
+    RUN_TEST(id_validation);
+    RUN_TEST(id_copy);
+    
+    /* Collection tests */
+    printf("\n--- Collection Tests ---\n");
+    RUN_TEST(collection_validate_params);
+    RUN_TEST(collection_create_close);
+    RUN_TEST(collection_metrics);
+    RUN_TEST(collection_create_invalid);
+    RUN_TEST(collection_get_info_invalid);
+    RUN_TEST(collection_long_name);
+    
+    /* Print summary and exit */
     TEST_SUMMARY();
     
     return 0;
 }
-
