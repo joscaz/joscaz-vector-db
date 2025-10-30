@@ -116,6 +116,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/vdb.dir/DependInfo.cmake"
   "CMakeFiles/vdb_cli.dir/DependInfo.cmake"
   "CMakeFiles/vdb_tests.dir/DependInfo.cmake"
   )

@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_collection.c" "CMakeFiles/vdb_tests.dir/tests/test_collection.c.o" "gcc" "CMakeFiles/vdb_tests.dir/tests/test_collection.c.o.d"
   "/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_main.c" "CMakeFiles/vdb_tests.dir/tests/test_main.c.o" "gcc" "CMakeFiles/vdb_tests.dir/tests/test_main.c.o.d"
+  "/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_types.c" "CMakeFiles/vdb_tests.dir/tests/test_types.c.o" "gcc" "CMakeFiles/vdb_tests.dir/tests/test_types.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

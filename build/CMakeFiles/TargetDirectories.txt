@@ -1,3 +1,4 @@
+/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles/vdb.dir
 /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles/vdb_cli.dir
 /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles/vdb_tests.dir
 /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles/test.dir

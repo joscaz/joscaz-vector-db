@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named vdb
+
+# Build rule for target.
+vdb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vdb
+.PHONY : vdb
+
+# fast build rule for target.
+vdb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/build
+.PHONY : vdb/fast
+
+#=============================================================================
 # Target rules for targets named vdb_cli
 
 # Build rule for target.
@@ -176,6 +189,78 @@ cli/vdb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_cli.dir/build.make CMakeFiles/vdb_cli.dir/cli/vdb.c.s
 .PHONY : cli/vdb.c.s
 
+src/collection.o: src/collection.c.o
+.PHONY : src/collection.o
+
+# target to build an object file
+src/collection.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/collection.c.o
+.PHONY : src/collection.c.o
+
+src/collection.i: src/collection.c.i
+.PHONY : src/collection.i
+
+# target to preprocess a source file
+src/collection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/collection.c.i
+.PHONY : src/collection.c.i
+
+src/collection.s: src/collection.c.s
+.PHONY : src/collection.s
+
+# target to generate assembly for a file
+src/collection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/collection.c.s
+.PHONY : src/collection.c.s
+
+src/types.o: src/types.c.o
+.PHONY : src/types.o
+
+# target to build an object file
+src/types.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/types.c.o
+.PHONY : src/types.c.o
+
+src/types.i: src/types.c.i
+.PHONY : src/types.i
+
+# target to preprocess a source file
+src/types.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/types.c.i
+.PHONY : src/types.c.i
+
+src/types.s: src/types.c.s
+.PHONY : src/types.s
+
+# target to generate assembly for a file
+src/types.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb.dir/build.make CMakeFiles/vdb.dir/src/types.c.s
+.PHONY : src/types.c.s
+
+tests/test_collection.o: tests/test_collection.c.o
+.PHONY : tests/test_collection.o
+
+# target to build an object file
+tests/test_collection.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_collection.c.o
+.PHONY : tests/test_collection.c.o
+
+tests/test_collection.i: tests/test_collection.c.i
+.PHONY : tests/test_collection.i
+
+# target to preprocess a source file
+tests/test_collection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_collection.c.i
+.PHONY : tests/test_collection.c.i
+
+tests/test_collection.s: tests/test_collection.c.s
+.PHONY : tests/test_collection.s
+
+# target to generate assembly for a file
+tests/test_collection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_collection.c.s
+.PHONY : tests/test_collection.c.s
+
 tests/test_main.o: tests/test_main.c.o
 .PHONY : tests/test_main.o
 
@@ -200,6 +285,30 @@ tests/test_main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_main.c.s
 .PHONY : tests/test_main.c.s
 
+tests/test_types.o: tests/test_types.c.o
+.PHONY : tests/test_types.o
+
+# target to build an object file
+tests/test_types.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_types.c.o
+.PHONY : tests/test_types.c.o
+
+tests/test_types.i: tests/test_types.c.i
+.PHONY : tests/test_types.i
+
+# target to preprocess a source file
+tests/test_types.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_types.c.i
+.PHONY : tests/test_types.c.i
+
+tests/test_types.s: tests/test_types.c.s
+.PHONY : tests/test_types.s
+
+# target to generate assembly for a file
+tests/test_types.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vdb_tests.dir/build.make CMakeFiles/vdb_tests.dir/tests/test_types.c.s
+.PHONY : tests/test_types.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,14 +318,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... vdb"
 	@echo "... vdb_cli"
 	@echo "... vdb_tests"
 	@echo "... cli/vdb.o"
 	@echo "... cli/vdb.i"
 	@echo "... cli/vdb.s"
+	@echo "... src/collection.o"
+	@echo "... src/collection.i"
+	@echo "... src/collection.s"
+	@echo "... src/types.o"
+	@echo "... src/types.i"
+	@echo "... src/types.s"
+	@echo "... tests/test_collection.o"
+	@echo "... tests/test_collection.i"
+	@echo "... tests/test_collection.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"
+	@echo "... tests/test_types.o"
+	@echo "... tests/test_types.i"
+	@echo "... tests/test_types.s"
 .PHONY : help
 
 

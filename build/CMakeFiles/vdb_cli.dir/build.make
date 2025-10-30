@@ -95,6 +95,7 @@ vdb_cli_EXTERNAL_OBJECTS =
 
 vdb_cli: CMakeFiles/vdb_cli.dir/cli/vdb.c.o
 vdb_cli: CMakeFiles/vdb_cli.dir/build.make
+vdb_cli: libvdb.a
 vdb_cli: CMakeFiles/vdb_cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable vdb_cli"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vdb_cli.dir/link.txt --verbose=$(VERBOSE)

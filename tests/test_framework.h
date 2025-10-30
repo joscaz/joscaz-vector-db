@@ -29,7 +29,7 @@ static const char *_current_test = NULL;
  * Usage: TEST(my_test_name) { ASSERT_TRUE(1 == 1); }
  */
 #define TEST(name) \
-    static void test_##name(void)
+    void test_##name(void)
 
 /**
  * Run a test and track results

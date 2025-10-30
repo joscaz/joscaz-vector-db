@@ -5,6 +5,7 @@
 #include "vdb/collection.h"
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 // internal collection structure (opaque to users)
 struct vdb_collection {

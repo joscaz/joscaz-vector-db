@@ -72,10 +72,24 @@ include CMakeFiles/vdb_tests.dir/flags.make
 CMakeFiles/vdb_tests.dir/codegen:
 .PHONY : CMakeFiles/vdb_tests.dir/codegen
 
+CMakeFiles/vdb_tests.dir/tests/test_collection.c.o: CMakeFiles/vdb_tests.dir/flags.make
+CMakeFiles/vdb_tests.dir/tests/test_collection.c.o: /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_collection.c
+CMakeFiles/vdb_tests.dir/tests/test_collection.c.o: CMakeFiles/vdb_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vdb_tests.dir/tests/test_collection.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vdb_tests.dir/tests/test_collection.c.o -MF CMakeFiles/vdb_tests.dir/tests/test_collection.c.o.d -o CMakeFiles/vdb_tests.dir/tests/test_collection.c.o -c /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_collection.c
+
+CMakeFiles/vdb_tests.dir/tests/test_collection.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vdb_tests.dir/tests/test_collection.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_collection.c > CMakeFiles/vdb_tests.dir/tests/test_collection.c.i
+
+CMakeFiles/vdb_tests.dir/tests/test_collection.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vdb_tests.dir/tests/test_collection.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_collection.c -o CMakeFiles/vdb_tests.dir/tests/test_collection.c.s
+
 CMakeFiles/vdb_tests.dir/tests/test_main.c.o: CMakeFiles/vdb_tests.dir/flags.make
 CMakeFiles/vdb_tests.dir/tests/test_main.c.o: /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_main.c
 CMakeFiles/vdb_tests.dir/tests/test_main.c.o: CMakeFiles/vdb_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vdb_tests.dir/tests/test_main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vdb_tests.dir/tests/test_main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vdb_tests.dir/tests/test_main.c.o -MF CMakeFiles/vdb_tests.dir/tests/test_main.c.o.d -o CMakeFiles/vdb_tests.dir/tests/test_main.c.o -c /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_main.c
 
 CMakeFiles/vdb_tests.dir/tests/test_main.c.i: cmake_force
@@ -86,17 +100,36 @@ CMakeFiles/vdb_tests.dir/tests/test_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vdb_tests.dir/tests/test_main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_main.c -o CMakeFiles/vdb_tests.dir/tests/test_main.c.s
 
+CMakeFiles/vdb_tests.dir/tests/test_types.c.o: CMakeFiles/vdb_tests.dir/flags.make
+CMakeFiles/vdb_tests.dir/tests/test_types.c.o: /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_types.c
+CMakeFiles/vdb_tests.dir/tests/test_types.c.o: CMakeFiles/vdb_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vdb_tests.dir/tests/test_types.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vdb_tests.dir/tests/test_types.c.o -MF CMakeFiles/vdb_tests.dir/tests/test_types.c.o.d -o CMakeFiles/vdb_tests.dir/tests/test_types.c.o -c /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_types.c
+
+CMakeFiles/vdb_tests.dir/tests/test_types.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vdb_tests.dir/tests/test_types.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_types.c > CMakeFiles/vdb_tests.dir/tests/test_types.c.i
+
+CMakeFiles/vdb_tests.dir/tests/test_types.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vdb_tests.dir/tests/test_types.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/tests/test_types.c -o CMakeFiles/vdb_tests.dir/tests/test_types.c.s
+
 # Object files for target vdb_tests
 vdb_tests_OBJECTS = \
-"CMakeFiles/vdb_tests.dir/tests/test_main.c.o"
+"CMakeFiles/vdb_tests.dir/tests/test_collection.c.o" \
+"CMakeFiles/vdb_tests.dir/tests/test_main.c.o" \
+"CMakeFiles/vdb_tests.dir/tests/test_types.c.o"
 
 # External object files for target vdb_tests
 vdb_tests_EXTERNAL_OBJECTS =
 
+vdb_tests: CMakeFiles/vdb_tests.dir/tests/test_collection.c.o
 vdb_tests: CMakeFiles/vdb_tests.dir/tests/test_main.c.o
+vdb_tests: CMakeFiles/vdb_tests.dir/tests/test_types.c.o
 vdb_tests: CMakeFiles/vdb_tests.dir/build.make
+vdb_tests: libvdb.a
 vdb_tests: CMakeFiles/vdb_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable vdb_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/josecarloszertuche/Documents/RandomProgProjects/joscaz-vector-db/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable vdb_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vdb_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
