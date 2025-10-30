@@ -1,3 +1,7 @@
+################################################################################
+# COMPILATION / BUILD ARTIFACTS
+################################################################################
+
 # Prerequisites
 *.d
 
@@ -22,7 +26,7 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects (including Windows DLLs)
 *.dll
 *.so
 *.so.*
@@ -41,6 +45,7 @@
 *.su
 *.idb
 *.pdb
+*.dwo
 
 # Kernel Module Compile Results
 *.mod*
@@ -51,46 +56,86 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
 
-# Help tools that honor '.gitignore' (redundant for Git itself).
-/.git
+################################################################################
+# CMAKE / BUILD SYSTEM FILES
+################################################################################
 
-/CMakeUserPresets.json
-
-# Common build directories
+# CMake build directories
 /build*/
-
-# CI jobs that run in symlinked trees produce these artifacts.
-/real_work/
-/work
-
-# MacOS Finder files.
-.DS_Store
-
-# Python compile output.
-*.pyc
-
-# See Utilities/Sphinx/tutorial_archive.cmake
-/Help/_generated
-
-# CLion work directory
-/.idea/
-# CLion build directories
 /cmake-build-*/
 
-# QtCreator files.
-/CMakeLists.txt.user*
+# Core CMake-generated files
+/CMakeCache.txt
+/CMakeFiles/
+/CMakeScripts/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# Ninja build files
+.ninja_deps
+.ninja_log
+/build.ninja
+
+# CMake user/local config
+/CMakeUserPresets.json
+/CMakeSettings.json
+
+# CTest, coverage, install dirs
+/Testing/
+/install/
+/out/build*/
+/out/install*/
+
+################################################################################
+# DEVELOPMENT ENVIRONMENTS
+################################################################################
+
+# CLion
+/.idea/
 
 # Visual Studio Code
 /.vscode/
 /.cache/
 
-# Visual Studio work directory
+# Visual Studio
 /.vs/
-# Visual Studio build directory
 /out/
 
-# clang-tidy output
+# Qt Creator
+/CMakeLists.txt.user*
+/CMakeLists.txt.user
+*.pro.user
+*.qbs.user
+*.qbs.user.*
+*.moc
+
+################################################################################
+# LANGUAGE / TOOL SPECIFIC
+################################################################################
+
+# Python (sometimes used for build scripts)
+*.pyc
+
+# clang-tidy / clangd / code analysis
 /clang-tidy-fixes.patch
+/.cache/
+compile_commands.json
+
+# Documentation build (e.g. Sphinx)
+/Help/_generated
+
+################################################################################
+# SYSTEM FILES
+################################################################################
+
+# macOS Finder
+.DS_Store
+
+# Git internal (redundant but harmless)
+/.git
+
+# CI temporary directories
+/real_work/
+/work
