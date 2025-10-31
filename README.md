@@ -1,6 +1,8 @@
-# joscaz-vector-db
+# joscaz implementation of a vector db
 
 A minimal Chroma-like vector database implemented in C.
+
+Why I'm building this? - Well I want to learn the behind-the-scenes of vector DBs as I really like their functionality and use cases, and also I get bored sometimes and need to build something.
 
 ## Overview
 
